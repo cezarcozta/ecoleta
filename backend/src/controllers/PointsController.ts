@@ -98,22 +98,75 @@ export default class PointsController {
     return response.json(serializedPoints);
    }
 
-  // public async update(request: Request, response: Response){
-  //   
-      
-  //   return response.json(updatedPoint);
-  // }
+  public async update(request: Request, response: Response){
+    const { id } =  request.params;
 
-  // public async delete(request: Request, response: Response){
-  //   const { id } = request.params;
+    const {
+      name,
+      email,
+      whatsapp,
+      latitude,
+      longitude,
+      city,
+      uf,
+      items,
+    } = request.body;
 
-  //   const point = await knex('points').where('id', id).first();
+    const trx = await knex.transaction();
 
-  //   if(!point) {
-  //    return response.status(400).json({ message: 'point not found' });
-  //   }
-  //   
-  //   return response.status(204).json({ message: 'point deleted' });
-  // }
+    const point = await trx('points').where('id', id).first();
+
+    const pointItems = items
+      .split(',')
+      .map((item: string) => Number(item.trim()))
+      .map((item_id: number) => {
+        return {
+          item_id,
+          point_id: id,
+        }
+    });
+
+    if(!point) {
+      return response.status(400).json({message: 'point not found'});
+    }
+
+    await trx('points').where('id', id).update({
+      name,
+      email,
+      whatsapp,
+      latitude,
+      longitude,
+      city,
+      uf,
+    });
+
+    const updatedPoint = await trx('points').where('id', id).first();
+
+    await trx('point_items').insert(pointItems);
+
+    await trx.commit();
+
+    return response.json(updatedPoint);
+  }
+
+  public async delete(request: Request, response: Response){
+    const { id } = request.params;
+
+    const point = await knex('points').where('id', id).first();
+    
+    if(!point) {
+     return response.status(400).json({ message: 'point not found' });
+    }
+
+    const trx = await knex.transaction();
+
+    await trx('point_items').where('point_id', id).delete();
+
+    await trx('points').delete().where('id', id);
+
+    await trx.commit();
+
+    return response.status(204).json({ message: 'point deleted' });
+  }
 }
 

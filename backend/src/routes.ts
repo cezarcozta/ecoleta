@@ -36,5 +36,7 @@ pointsController.create);
 
 routes.get('/points', pointsController.index);
 routes.get('/points/:id', pointsController.show);
+routes.delete('/points/:id', pointsController.delete);
+routes.put('/points/:id', pointsController.update);
 
 export default routes;
