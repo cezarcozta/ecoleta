@@ -16,8 +16,8 @@ const itemsController = new ItemsController();
 routes.get('/items', itemsController.index);
 
 routes.post(
-  '/points', 
-  upload.single('image'), 
+  '/points',
+  upload.single('image'),
   celebrate({
     body: Joi.object().keys({
       name: Joi.string().required(),
@@ -28,11 +28,12 @@ routes.post(
       city: Joi.string().required(),
       uf: Joi.string().required().max(2),
       items: Joi.string().required(),
-    })
-  },{
+    }),
+  }, {
     abortEarly: false,
   }),
-pointsController.create);
+  pointsController.create,
+);
 
 routes.get('/points', pointsController.index);
 routes.get('/points/:id', pointsController.show);
