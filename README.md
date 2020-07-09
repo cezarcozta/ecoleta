@@ -4,8 +4,8 @@
 
     Aplicação para conexão via whatsapp ou e-mail entre pessoas que 
     desejam oferecer items a serem coletados para que o descarte seja 
-    feito de forma correta, e os pontos de coletas que recebem e coletam.
-    items e dão o destino correto pra cada item.
+    feito de forma correta, e os pontos de coletas que recebem e coletam
+    items e assim como dão o destino correto pra cada item.
     Com o app web Ecoleta os locais de pontos de coleta se cadastram com 
     nome, foto e endereço(clicando no mapa) e adicionam os items aos quais
     coletam.
@@ -19,9 +19,9 @@
 
 ## Identidade Visual  
 
-![]()
+![]('./frontend/src/assets/home-background.svg')
 
-![]()  
+![]('./frontend/src/assets/logo.svg')  
 
 ## Tecnologias envolvidas  
 
