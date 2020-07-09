@@ -51,7 +51,7 @@ yarn
 yarn start  
 ```
 
->url: http://localhost:3333/
+`url: http://localhost:3333/`
 
 >## **/frontend**  
 
@@ -61,7 +61,7 @@ yarn
 yarn start
 ```  
 
->(http://localhost:3000/)  
+`url: http://localhost:3000/`  
 
 >## **/mobile**  
 
