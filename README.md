@@ -37,16 +37,12 @@
 
 **Precondition: yarn package manager.**  
 >**clone the repository**  
-`
 
-git clone https://www.github.com/cezarcozta/be-the-hero  
-`  
+'git clone https://www.github.com/cezarcozta/ecoleta'  
 
 >**access project folder**  
-`
 
-cd /be-the-hero  
-`  
+'cd /be-the-hero'  
 
 >## **/backend**  
 
@@ -56,7 +52,7 @@ yarn
 yarn start  
 ```
 
-> http://localhost:3333/  
+>url: http://localhost:3333/
 
 >## **/frontend**  
 
@@ -66,7 +62,7 @@ yarn
 yarn start
 ```  
 
-> http://localhost:3000/  
+>(http://localhost:3000/)  
 
 >## **/mobile**  
 
