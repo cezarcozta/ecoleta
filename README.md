@@ -17,12 +17,12 @@
     Whatsapp do ponto para por fim poder entrar em contato para combinar 
     a coleta.   
 
-## Identidade Visual  
+## Design  
 
 ![logo](https://github.com/cezarcozta/ecoleta/blob/master/frontend/src/assets/logo.svg)
 ![background](https://github.com/cezarcozta/ecoleta/blob/master/frontend/src/assets/home-background.svg)
 
-## Tecnologias envolvidas  
+## Techs  
 
 - **Language:** JS + TS  
 - **Database:** SQLite3 + KNEX.js ORM  
@@ -45,46 +45,34 @@
 
 >## **/backend**  
 
-```zsh
-cd /backend  
-yarn  
-yarn start  
-```
+`cd /backend`  
+`yarn`
+`yarn start`
 
 `url: http://localhost:3333/`
 
 >## **/frontend**  
 
-```zsh
-cd /frontend  
-yarn  
-yarn start
-```  
+`cd /front-end`  
+`yarn`
+`yarn start`  
 
 `url: http://localhost:3000/`  
 
 >## **/mobile**  
 
-```zsh
-cd /mobile  
-yarn
-yarn start
-```  
+`cd /mobile`  
+`yarn`
+`yarn start`  
 
-> Baixe e instale o EXPO no seu smartphone, acesse o EXPO e escaneie o QRCode do terminal ou escaneie em http://localhost:19002/  
->**Ajustando acesso a api**  
+> Download and install EXPO in your smartphone, access the EXPO app and scan the QRCode from the terminal or scam from [http://localhost:19002/](http://localhost:19002/)  
+>**Adjusting access to the api**  
 
-```zsh
-/mobile/src/services/api.js
-```
+```zsh /mobile/src/services/api.js```
 
-![](https://github.com/cezarcozta/be-the-hero/blob/master/mobile/src/assests/tela.png)  
+![trocaip](https://github.com/cezarcozta/be-the-hero/blob/master/mobile/src/assests/tela.png)  
 
-```javascript
-const api = axios.create({
-    baseURL: 'http://192.168.1.105:3333',
-});
-```  
+```ts const api = axios.create({ baseURL: 'http://192.168.1.105:3333'});```  
 
 ### Desenvolvido por  
 
