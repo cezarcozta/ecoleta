@@ -68,11 +68,11 @@
 > Download and install EXPO in your smartphone, access the EXPO app and scan the QRCode from the terminal or scam from [http://localhost:19002/](http://localhost:19002/)  
 >**Adjusting access to the api**  
   
-```zsh /mobile/src/services/api.js```  
+`/mobile/src/services/api.js`  
   
 ![trocaip](https://github.com/cezarcozta/be-the-hero/blob/master/mobile/src/assests/tela.png)  
   
-```ts const api = axios.create({ baseURL: 'http://192.168.1.105:3333'});```  
+```const api = axios.create({ baseURL: 'http://192.168.1.105:3333'});```  
   
 ### Desenvolvido por  
 
