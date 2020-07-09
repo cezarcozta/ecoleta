@@ -19,9 +19,10 @@
 
 ## Identidade Visual  
 
+![](https://github.com/cezarcozta/ecoleta/blob/master/frontend/src/assets/logo.svg)
 ![](https://github.com/cezarcozta/ecoleta/blob/master/frontend/src/assets/home-background.svg)
 
-![](https://github.com/cezarcozta/ecoleta/blob/master/frontend/src/assets/logo.svg)  
+
 
 ## Tecnologias envolvidas  
 
