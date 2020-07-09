@@ -19,10 +19,8 @@
 
 ## Identidade Visual  
 
-![](https://github.com/cezarcozta/ecoleta/blob/master/frontend/src/assets/logo.svg)
-![](https://github.com/cezarcozta/ecoleta/blob/master/frontend/src/assets/home-background.svg)
-
-
+![logo](https://github.com/cezarcozta/ecoleta/blob/master/frontend/src/assets/logo.svg)
+![background](https://github.com/cezarcozta/ecoleta/blob/master/frontend/src/assets/home-background.svg)
 
 ## Tecnologias envolvidas  
 
@@ -39,11 +37,11 @@
 **Precondition: yarn package manager.**  
 >**clone the repository**  
 
-'git clone https://www.github.com/cezarcozta/ecoleta'  
+```git clone https://www.github.com/cezarcozta/ecoleta```  
 
 >**access project folder**  
 
-'cd /be-the-hero'  
+```cd /be-the-hero```  
 
 >## **/backend**  
 
